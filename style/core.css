@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+  
+
+html, body {
+    color: #D2D2D2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    max-height: 100vh;
+    background-color: #2a2a2a;
+}
+
+body {
+    z-index: 0;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+h1 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    line-height: 1.175;
+    font-weight: 700;
+    letter-spacing: 0.65rem;
+}
+
+h2 {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    line-height: 1.175;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    line-height: 1px;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(19, 130, 204);
+    transition: 0.3s;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#profile {
+    max-width: 600px;
+}
+
+#profile img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid rgb(19, 130, 204);
+    border-radius: 100%;
+    filter: brightness(80%);
+}
+
+#profile img:hover {
+    border: 4px solid rgb(29, 161, 242);
+    filter: brightness(100%);
+    transition: 0.3s;
+}
+
+#portfolio {
+    display: flex;
+    flex-flow:column;
+}
+
+.project {
+    border-radius: 10px;
+    background-color: #333;
+    width: 80vw;
+    max-width: 800px;
+    margin: 10px;
+    align-self: center;
+}
+
+.project img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+li {
+    margin: 0 4px 0 4px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 50px;
+    background-color: rgb(19, 130, 204);
+    color: white;
+    display:inline-block;
+}
