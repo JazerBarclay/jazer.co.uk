@@ -87,8 +87,8 @@ body {
 }
 
 #profile img:hover {
-    width: 305px;
-    height: 305px;
+    width: 308px;
+    height: 308px;
     border: 0px solid rgb(29, 161, 242);
     filter: brightness(100%);
     transition: 0.3s;
