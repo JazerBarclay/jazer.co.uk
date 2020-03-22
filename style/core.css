@@ -88,6 +88,7 @@ body {
 
 #profile img:hover {
     width: 200px;
+    height: 200px;
     border: 54px solid rgb(29, 161, 242);
     filter: brightness(100%);
     transition: 0.3s;
