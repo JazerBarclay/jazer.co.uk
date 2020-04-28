@@ -1,19 +1,35 @@
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald:600&display=swap" rel="stylesheet">
     <link href="/style/core.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>GitHub Pages</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script>
+      $(function() {
+        $("nav > a").click(function(e) {
+            e.preventDefault();
+
+            $("main").load(this.href, function() {
+                
+            });
+        });
+    });
+    </script>
+
   </head>
   <body>
 
     <header class="container">
-      <img src="/sig.png" />
+      <a href="/" style="border:0;"><img src="/sig.png" /></a>
       <nav>
-        <a>About Me</a>
-        <a>Side Projects</a>
-        <a>Accolades</a>
-        <a>Follow Me</a>
+        <a href="/about.html">About Me</a>
+        <a href="/projects.html">Side Projects</a>
+        <a href="/accolades.html">Accolades</a>
+        <a href="/follow.html">Follow Me</a>
       </nav>
     </header>
 
@@ -32,7 +48,7 @@
          and writings on 
       <a href="https://jazer.dev/blog">Jazer.DEV</a>
          . Full resume is available on 
-      <a href="https://www.linkedin.com/JazerBarclay">LinkedIn</a>
+      <a href="https://uk.linkedin.com/in/jazer-barclay">LinkedIn</a>
           and code portfolio on 
       <a href="https://www.github.com/JazerBarclay">Github</a>
          .</p>
