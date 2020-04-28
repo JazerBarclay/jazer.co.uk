@@ -94,7 +94,6 @@ strong:hover {
 }
 
 h1 {
-    /* text-transform: uppercase; */
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
@@ -104,21 +103,22 @@ h1 {
 }
 
 h2 {
+    text-transform: uppercase;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
     line-height: 1.175;
     font-weight: 700;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     margin-bottom: 12px;
 }
 
 h3 {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     line-height: 1px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 0.2rem;
 }
 
@@ -145,10 +145,58 @@ ul {
 }
 
 li {
-    margin: 0 4px 0 4px;
+    text-align: left;
+    line-height: 2.2;
+    /* margin: 0 4px 0 4px;
     padding: 6px 12px 6px 12px;
     border-radius: 50px;
     background-color: rgb(19, 130, 204);
     color: white;
-    display:inline-block;
+    display:inline-block; */
+}
+
+#about {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-start;
+    grid-gap: 40px;
+}
+
+#about h2 {
+    margin: 10px;
+    padding: 0;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#design {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+#code {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+#business {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+#experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
