@@ -1,18 +1,47 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+:root {
+    /* Page Colours */
+    --header-footer-color: #222222;
+    --page-color: #2a2a2a;
+    --border-color: #444444;
+
+    /* General Palet */
+    --primary-color: rgb(19, 130, 204); /* #1382cc */
+    --secondary-color: #377fad;
+    --alternate-color: white;
+
+    /* Font Colours */
+    --heading-color: #fcfcfc;
+    --font-color: #e0e3eb;
+    --span-color: #898989;
+    --link-color: #ccc;
+    --link-hover-color: #a2a2a2;
+    --footer-color: #898989;
+
+    --font-size: 18px;
+
+    --hover-transition: .2s;
+}
 
 * {
     -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    
+    scroll-behavior: smooth;
 }
   
 
 html, body {
     color: #D2D2D2;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: var(--font-size);
+    color: var(--font-color);
     padding: 0;
     margin: 0;
 }
@@ -26,7 +55,6 @@ body {
     text-align: left;
     display: flex;
     flex-flow: column;
-    height: 100vh;
 }
 
 header {
@@ -35,6 +63,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    min-height: 40px;
 }
 
 header img {
@@ -60,6 +89,7 @@ nav a:hover {
 
 main {
     flex-grow: 1;
+    height: auto;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -72,8 +102,9 @@ footer {
 }
 
 .container {
-    width: 1200px;
+    width: 95%;
     max-width: 1200px;
+    padding: 20px;
     margin: auto;
 }
 
@@ -84,7 +115,7 @@ p {
 
 strong {
     font-weight: 600;
-    color: white;
+    color: var(--heading-color);
     transition: .2s;
 }
 
@@ -94,7 +125,6 @@ strong:hover {
 }
 
 h1 {
-    color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     line-height: 1.35;
@@ -150,11 +180,12 @@ li {
 }
 
 #about {
-    padding-top: 50px;
+    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: flex-start;
-    grid-gap: 40px;
+    grid-gap: 50px;
+    grid-row-gap: 100px;
 }
 
 #about h2 {
@@ -193,4 +224,17 @@ li {
 #work {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 800px) {
+    :root{
+        --font-size: 14px;
+    }
+
+    h1 {
+        font-size: 3em;
+        line-height: 1.35;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+    }
 }
