@@ -114,8 +114,8 @@ p {
 }
 
 strong {
-    font-weight: 600;
     color: var(--heading-color);
+    font-weight: 600;
     transition: .2s;
 }
 
@@ -170,7 +170,7 @@ ul {
     border-width:1px 0;
     list-style:none;
     margin:0;
-    padding:0;
+    padding:10px;
     text-align:center;
 }
 
@@ -180,16 +180,15 @@ li {
 }
 
 #about {
-    padding-top: 80px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: flex-start;
     grid-gap: 50px;
-    grid-row-gap: 100px;
+    grid-row-gap: 80px;
 }
 
 #about h2 {
-    margin: 10px;
+    margin: 5px;
     padding: 0;
 }
 
@@ -226,9 +225,17 @@ li {
     grid-template-columns: 1fr 1fr;
 }
 
+@media only screen and (max-width: 1200px) {
+    #about {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-row-gap: 50px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     :root{
-        --font-size: 14px;
+        /* --font-size: 14px; */
     }
 
     h1 {
@@ -237,4 +244,24 @@ li {
         font-weight: 500;
         letter-spacing: 0.08em;
     }
+
+
+    #about {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-row-gap: 50px;
+    }
+
+    #skills {
+        grid-template-columns: 1fr;
+    }
+
+    #experience {
+        grid-template-columns: 1fr;
+    }
+
+    #work {
+        grid-template-columns: 1fr;
+    }
+
 }
