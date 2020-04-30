@@ -184,7 +184,7 @@ li {
     grid-template-columns: 1fr 3fr;
     align-items: flex-start;
     grid-gap: 50px;
-    grid-row-gap: 80px;
+    grid-row-gap: 40px;
 }
 
 #about h2 {
