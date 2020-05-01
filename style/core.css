@@ -87,6 +87,10 @@ nav a:hover {
     color: rgb(19, 130, 204);
 }
 
+nav .active {
+    color: rgb(19, 130, 204);
+}
+
 main {
     flex-grow: 1;
     height: auto;
@@ -226,6 +230,10 @@ li {
 }
 
 @media only screen and (max-width: 1200px) {
+    header {
+        flex-flow: column;
+    }
+    nav{ padding: 10px; text-align: center; }
     #about {
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -245,6 +253,7 @@ li {
         letter-spacing: 0.08em;
     }
 
+    nav{ flex-flow: column; }
 
     #about {
         grid-template-columns: 1fr;
