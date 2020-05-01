@@ -108,7 +108,7 @@ footer {
 .container {
     width: 95%;
     max-width: 1200px;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
 }
 
@@ -230,10 +230,17 @@ li {
 }
 
 @media only screen and (max-width: 1200px) {
-    header {
-        flex-flow: column;
+    :root {
+        --font-size: 16px;
     }
     nav{ padding: 10px; text-align: center; }
+    nav a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .container {
+        width: 95%;
+    }
     #about {
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -242,8 +249,20 @@ li {
 }
 
 @media only screen and (max-width: 800px) {
-    :root{
+    :root {
         /* --font-size: 14px; */
+    }
+
+    header {
+        flex-flow: column;
+    }
+
+    header img {
+        padding: 10px;
+    }
+
+    p, h1, h2, h3 {
+        text-align: center;
     }
 
     h1 {
@@ -252,8 +271,6 @@ li {
         font-weight: 500;
         letter-spacing: 0.08em;
     }
-
-    nav{ flex-flow: column; }
 
     #about {
         grid-template-columns: 1fr;
@@ -272,5 +289,24 @@ li {
     #work {
         grid-template-columns: 1fr;
     }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        flex-flow: row;
+    }
+
+    header img {
+        width: 50vw;
+        height: auto;
+        max-height: max-content;
+    }
+    
+    nav { flex-flow: column; text-align: right;}
+
+    nav a { padding: 10px; font-size: 4vw; }
 
 }
