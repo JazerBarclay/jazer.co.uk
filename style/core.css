@@ -151,9 +151,10 @@ h3 {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
-    line-height: 1px;
+    line-height: 1em;
     font-weight: 500;
     letter-spacing: 0.2rem;
+    margin: 0;
 }
 
 a {
@@ -181,6 +182,13 @@ ul {
 li {
     text-align: left;
     line-height: 2.2;
+}
+
+li:nth-child(even) {
+    line-height: 1.2;
+    color: var(--span-color);
+    font-size: .8em;
+    padding-left: 5px;
 }
 
 #about {
@@ -233,18 +241,21 @@ li {
     :root {
         --font-size: 16px;
     }
-    nav{ padding: 10px; text-align: center; }
+
+    nav { padding: 10px; text-align: center; }
+
     nav a {
         margin-left: 20px;
         margin-right: 20px;
     }
     .container {
-        width: 95%;
+        width: 90%;
     }
+
     #about {
         grid-template-columns: 1fr;
         grid-gap: 20px;
-        grid-row-gap: 50px;
+        grid-row-gap: 30px;
     }
 }
 
@@ -273,9 +284,14 @@ li {
     }
 
     #about {
+        text-align: center;
         grid-template-columns: 1fr;
         grid-gap: 20px;
-        grid-row-gap: 50px;
+        grid-row-gap: 30px;
+    }
+
+    #about * {
+        align-items: center;
     }
 
     #skills {
@@ -290,6 +306,11 @@ li {
         grid-template-columns: 1fr;
     }
 
+    ul {
+        display: flex;
+        flex-flow: column;
+    }
+
 }
 
 
@@ -300,12 +321,12 @@ li {
     }
 
     header img {
-        width: 50vw;
+        width: 40vw;
         height: auto;
         max-height: max-content;
     }
     
-    nav { flex-flow: column; text-align: right;}
+    nav { flex-flow: column; text-align: right; padding:0;}
 
     nav a { padding: 10px; font-size: 4vw; }
 
