@@ -216,19 +216,7 @@ li {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#design {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-}
-
-#code {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-}
-
-#business {
+.about-section {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
