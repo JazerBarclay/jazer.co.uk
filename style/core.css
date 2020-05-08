@@ -231,7 +231,7 @@ li {
 #work {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 10px;23
+    padding-top: 10px;
 }
 
 @media only screen and (max-width: 1200px) {
