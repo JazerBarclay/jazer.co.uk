@@ -220,21 +220,18 @@ li {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    padding-top: 10px;
 }
 
 #code {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    padding-top: 10px;
 }
 
 #business {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
-    padding-top: 10px;
 }
 
 #experience {
