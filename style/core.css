@@ -181,15 +181,17 @@ ul {
 
 li {
     text-align: left;
-    line-height: 2.2;
+    line-height: 1.4;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-li:nth-child(even) {
-    line-height: 1.2;
+/* li:nth-child(even) {
+    line-height: 1.0;
     color: var(--span-color);
     font-size: .8em;
     padding-left: 5px;
-}
+} */
 
 #about {
     display: grid;
@@ -204,6 +206,11 @@ li:nth-child(even) {
     padding: 0;
 }
 
+#about h3 {
+    margin: 5px;
+    padding: 2px;
+}
+
 #skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -213,28 +220,33 @@ li:nth-child(even) {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    padding-top: 10px;
 }
 
 #code {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    padding-top: 10px;
 }
 
 #business {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    padding-top: 10px;
 }
 
 #experience {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 10px;
 }
 
 #work {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 10px;23
 }
 
 @media only screen and (max-width: 1200px) {
