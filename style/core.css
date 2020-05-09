@@ -202,20 +202,20 @@ li {
     grid-row-gap: 40px;
 }
 
-#about svg {
+#about svg, #about img {
     width: 90px;
+    max-height: 90px;
     padding: 15px;
     margin: auto;
     transition: .2s;
 }
 
-#about svg:hover {
+#about svg:hover, #about img:hover {
     width: 120px;
+    max-height: 120px;
     padding: 0px;
     margin: auto;
     transition: .2s;
-
-
 }
 
 .content_img {
