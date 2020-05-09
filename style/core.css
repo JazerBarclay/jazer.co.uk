@@ -203,8 +203,8 @@ li {
 }
 
 #about svg {
-    width: 100px;
-    padding: 10px;
+    width: 90px;
+    padding: 15px;
     margin: auto;
     transition: .2s;
 }
