@@ -380,6 +380,16 @@ li {
         letter-spacing: 0.08em;
     }
 
+    #home-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+
+    #home-container img {
+        padding: 0;
+    }
+
     #about {
         text-align: center;
         grid-template-columns: 1fr;
