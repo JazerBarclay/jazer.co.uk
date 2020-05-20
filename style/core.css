@@ -85,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(19, 130, 204);
+    color: #1382cc;
 }
 
 nav .active {
@@ -188,13 +188,6 @@ li {
     padding-bottom: 5px;
 }
 
-/* li:nth-child(even) {
-    line-height: 1.0;
-    color: var(--span-color);
-    font-size: .8em;
-    padding-left: 5px;
-} */
-
 #home-container {
     display: grid;
     grid-template-columns: 11fr 9fr;
@@ -207,8 +200,7 @@ li {
     filter: brightness(80%);
     width: 90%;
     height: auto;
-    border-radius: 0%;
-    /* padding: 10% 10% 10% 10%; */
+    border-radius: 1%;
 }
 
 #about {
