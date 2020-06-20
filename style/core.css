@@ -222,6 +222,10 @@ li {
     padding-bottom: 5px;
 }
 
+form {
+    display: grid;
+}
+
 input {
     background: var(--header-footer-color);
     border: 0;
@@ -260,7 +264,7 @@ textarea {
 .button {
     background: transparent;
     color: #fff;
-    float: right;
+    justify-self: end;
     font-size: 12pt;
     margin: 5px 0 0 0;
     outline: 0;
@@ -515,13 +519,16 @@ textarea {
         grid-column: span 1;
     }
 
-
     #contact p {
         padding: 0px;
     }
 
     h2::after {
         width: 100px;
+    }
+
+    .button {
+        justify-self: center;
     }
 
 }
