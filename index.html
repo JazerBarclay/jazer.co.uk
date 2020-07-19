@@ -184,12 +184,12 @@
           </h2>
           <p>My inbox is always open. Whether you have a question or just want to say hi, I'll always try my best to get back to you.</p>
           <form class="waypoint" id="contact-form" action="mail_handler.php" method="POST">
-            <label>Name:</label>
-            <input type="text" name="name" required />
-            <label>Email Address:</label>
-            <input type="email" name="email" required />
-            <label>Your Message:</label>
-            <textarea type="text" name="message"></textarea>
+            <label for="form_name">Name:</label>
+            <input id="form_name" type="text" name="name" required />
+            <label for="form_email">Email Address:</label>
+            <input id="form_email" type="email" name="email" required />
+            <label for="form_message">Your Message:</label>
+            <textarea id="form_message" type="text" name="message"></textarea>
             <input class="button" type="submit" id="submit" name="submit" value="Send" />
           </form>
         </div>
