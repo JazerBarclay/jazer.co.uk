@@ -226,6 +226,11 @@ form {
     display: grid;
 }
 
+form label {
+    background-color: var(--header-footer-color);
+    padding: 10px 10px 0px 10px;
+}
+
 input {
     background: var(--header-footer-color);
     border: 0;
@@ -233,7 +238,7 @@ input {
     color: #fff;
     display: block;
     font-size: 12pt;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     outline: none;
     padding: 10px 15px;
     width: 100%;
