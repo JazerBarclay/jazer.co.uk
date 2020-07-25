@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jazer.co.uk/sitemap.xml
+Sitemap: http://www.jazer.co.uk/sitemap.xml
