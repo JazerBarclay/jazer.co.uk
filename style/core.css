@@ -287,6 +287,10 @@ textarea {
     width: 200px;
 }
 
+.g-recaptcha {
+    justify-self: end;
+}
+
 #home {
     display: grid;
     grid-template-columns: 1fr 1fr;

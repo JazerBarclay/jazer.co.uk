@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="/style/core.css" rel="stylesheet">
+    <link href="style/core.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <link rel="canonical" href="https://jazer.co.uk/">
@@ -74,6 +74,8 @@
       <symbol id="icon-proj" viewbox="0 0 20 20"><path d="M18.783,13.198H15.73c-0.431,0-0.78-0.35-0.78-0.779c0-0.433,0.349-0.78,0.78-0.78h2.273V3.652H7.852v0.922 c0,0.433-0.349,0.78-0.78,0.78c-0.431,0-0.78-0.347-0.78-0.78V2.872c0-0.43,0.349-0.78,0.78-0.78h11.711 c0.431,0,0.78,0.35,0.78,0.78v9.546C19.562,12.848,19.214,13.198,18.783,13.198z"></path><path d="M12.927,17.908H1.217c-0.431,0-0.78-0.351-0.78-0.78V7.581c0-0.43,0.349-0.78,0.78-0.78h11.709 c0.431,0,0.78,0.35,0.78,0.78v9.546C13.706,17.557,13.357,17.908,12.927,17.908z M1.997,16.348h10.15V8.361H1.997V16.348z"></path></symbol>
       <symbol id="icon-firebase" viewbox="0 0 48 48"><path fill="#ff8f00" d="M8,37L23.234,8.436c0.321-0.602,1.189-0.591,1.494,0.02L30,19L8,37z"></path><path fill="#ffa000" d="M8,36.992l5.546-34.199c0.145-0.895,1.347-1.089,1.767-0.285L26,22.992L8,36.992z"></path><path fill="#ff6f00" d="M8.008 36.986L8.208 36.829 25.737 22.488 20.793 13.012z"></path><path fill="#ffc400" d="M8,37l26.666-25.713c0.559-0.539,1.492-0.221,1.606,0.547L40,37l-15,8.743 c-0.609,0.342-1.352,0.342-1.961,0L8,37z"></path></symbol>
     </svg>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   </head>
   <body>
@@ -191,6 +193,7 @@
             <input id="form_email" type="email" name="email" required />
             <label for="form_message">Your Message:</label>
             <textarea id="form_message" type="text" name="message"></textarea>
+            <div class="g-recaptcha" data-sitekey="6LeFSPoZAAAAAJbvlHBBNWG5vDxUERdIN_SfdWDG"></div><br />
             <input class="button" type="submit" id="submit" name="submit" value="Send" />
           </form>
         </div>
