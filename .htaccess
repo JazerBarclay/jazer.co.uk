@@ -1,4 +1,7 @@
-
+# X-XSS-Protection
+<IfModule mod_headers.c>
+	Header set X-XSS-Protection "1; mode=block"
+</IfModule>
 
 # One year for image files
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
