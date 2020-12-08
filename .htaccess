@@ -1,7 +1,9 @@
-# X-XSS-Protection
+# X-XSS-Protection, Same origiin, nosniff, same origin refer
 <IfModule mod_headers.c>
 	Header set X-XSS-Protection "1; mode=block"
   Header always append X-Frame-Options SAMEORIGIN
+  Header set X-Content-Type-Options nosniff
+  Header set Referrer-Policy "same-origin"
 </IfModule>
 
 # One year for image files
