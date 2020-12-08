@@ -6,6 +6,11 @@
   Header set Referrer-Policy "same-origin"
 </IfModule>
 
+# Permission policy
+<IfModule>
+  Header set Permissions-Policy: geolocation=(self "https://example.com"), microphone=()
+</IfModule>
+
 # One year for image files
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
 Header set Cache-Control "max-age=31536000, public"
