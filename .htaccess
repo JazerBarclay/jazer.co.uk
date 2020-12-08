@@ -1,5 +1,5 @@
 # Set same origin frame
-X-Frame-Options: SAMEORIGIN
+Header set X-Frame-Options: SAMEORIGIN
 Header always append X-Frame-Options SAMEORIGIN
 
 # Enable nosniff
