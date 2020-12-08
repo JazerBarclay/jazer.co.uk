@@ -1,9 +1,4 @@
-# Set same origin frame
-Header set X-Frame-Options: SAMEORIGIN
-Header always append X-Frame-Options SAMEORIGIN
 
-# Enable nosniff
-Header set X-Content-Type-Options nosniff
 
 # One year for image files
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
