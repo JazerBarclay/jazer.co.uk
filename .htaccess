@@ -6,6 +6,11 @@
   Header set Referrer-Policy "same-origin"
 </IfModule>
 
+# Test content security policy
+<IfModule>
+  Header set Content-Security-Policy "default-src https://cdn.example.com; child-src 'none'; object-src 'none'"
+</IfModule>
+
 # One year for image files
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
 Header set Cache-Control "max-age=31536000, public"
